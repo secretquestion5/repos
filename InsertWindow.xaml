@@ -1,0 +1,28 @@
+﻿<Window x:Class="SimpleBase.InsertWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleBase"
+        mc:Ignorable="d"
+        Title="InsertWindow" Height="436" Width="500">
+    <Grid Margin="0,0,4,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="Variant" HorizontalAlignment="Left" Height="23" Margin="23,10,0,0" TextWrapping="Wrap" Text="Variant" VerticalAlignment="Top" Width="216" TextChanged="Variant_TextChanged" Grid.ColumnSpan="2"/>
+        <Button Content="Insert" HorizontalAlignment="Left" Margin="23,339,0,0" VerticalAlignment="Top" Width="75" Click="Insert_Button_Click" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Surname" HorizontalAlignment="Left" Height="23" Margin="23,38,0,0" TextWrapping="Wrap" Text="Surname" VerticalAlignment="Top" Width="216" TextChanged="Surname_TextChanged" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Cable" HorizontalAlignment="Left" Height="23" Margin="23,66,0,0" TextWrapping="Wrap" Text="Cable" VerticalAlignment="Top" Width="216" TextChanged="Cable_TextChanged" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Closure" HorizontalAlignment="Left" Height="23" Margin="23,94,0,0" TextWrapping="Wrap" Text="Closure" VerticalAlignment="Top" Width="216" TextChanged="Closure_TextChanged" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Converter" HorizontalAlignment="Left" Height="23" Margin="23,122,0,0" TextWrapping="Wrap" Text="Converter" VerticalAlignment="Top" Width="216" TextChanged="Converter_TextChanged" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Transiver" HorizontalAlignment="Left" Height="23" Margin="23,150,0,0" TextWrapping="Wrap" Text="Transceiver" VerticalAlignment="Top" Width="216" TextChanged="Transiver_TextChanged" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="OpticalAmplifier" HorizontalAlignment="Left" Height="23" Margin="23,233,0,0" TextWrapping="Wrap" Text="OpticalAmplifier" VerticalAlignment="Top" Width="216" TextChanged="OpticalAmplifier_TextChanged" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="MUX" HorizontalAlignment="Left" Height="23" Margin="23,261,0,0" TextWrapping="Wrap" Text="MUX" VerticalAlignment="Top" Width="216" TextChanged="MUX_TextChanged" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Transponder" HorizontalAlignment="Left" Height="23" Margin="23,178,0,0" TextWrapping="Wrap" Text="Transponder" VerticalAlignment="Top" Width="216" TextChanged="Transponder_TextChanged" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Switch" HorizontalAlignment="Left" Height="23" Margin="23,206,0,0" TextWrapping="Wrap" Text="Switch" VerticalAlignment="Top" Width="216" TextChanged="Switch_TextChanged" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="Price" HorizontalAlignment="Left" Height="23" Margin="23,289,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="216" TextChanged="Price_TextChanged" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

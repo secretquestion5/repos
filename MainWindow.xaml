@@ -1,0 +1,35 @@
+﻿<Window x:Class="SimpleBase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleBase"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="477" Width="1181">
+    <Grid>
+        <DataGrid x:Name="data" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="id" Binding="{Binding Path=id}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Вариант" Binding="{Binding Path=variant}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding Path=surname}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Кабель" Binding="{Binding Path=cable}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Муфта" Binding="{Binding Path=closure}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Конвертер" Binding="{Binding Path=converter}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Трансивер" Binding="{Binding Path=transiver}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Транспондер" Binding="{Binding Path=transponder}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Оптический переключатель" Binding="{Binding Path=switch}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Оптический усилитель" Binding="{Binding Path=opticalamplifier}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Мультиплексор" Binding="{Binding Path = mux}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Price" Binding="{Binding Path= price}"></DataGridTextColumn>
+            </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Modify" Click="Modify_Click"></MenuItem>
+                    <MenuItem Header="Delete" Click="Delete_Click"></MenuItem>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+        <Button Content="Insert" HorizontalAlignment="Left" Height="25" Margin="40,376,0,0" VerticalAlignment="Top" Width="107" Click="Insert_Click" ClipToBounds="True"/>
+    </Grid>
+    
+</Window>
